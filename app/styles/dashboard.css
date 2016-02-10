@@ -1,0 +1,24 @@
+@media only screen and (min-width: 479px) and (max-width: 678px) {
+	
+	}
+
+
+#clockWidget {
+    text-align: right;
+    width: 150px;
+}
+
+#clockWidget .time {
+    font-family: Trebuchet MS;
+    font-size: 2.5em;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+
+#clockWidget .date {
+    font-family: Trebuchet MS;
+    font-size: 1.5em;
+    margin: 0;
+    padding: 0;
+}

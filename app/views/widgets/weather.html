@@ -1,9 +1,12 @@
-<div id="weatherWidget">
-	<div class="weatherIco test"></div>
-	<div class="weatherInfo">
-		<span>City: {{weather.cityName}}</span>
-		<span>Temp: {{weather.temp}}</span>
-		<span>Icon: {{weather.icon}}</span>
-		<span>Description: {{weather.description}}</span>
+<div class="weatherWidget">
+	<div class="weatherIcon">
+		<ul></ul>
+	</div>
+	<div class="weatherDescription">
+		<span class="desc cityName">{{weather.cityName}}</span>
+		<span class="desc currentDescription">{{weather.description}}</span>
+		<span class="desc currentTemp">Temp: {{weather.temp}}ºC</span>
+		<span class="desc currentPressure">Pressure: {{weather.pressure}}hPa</span>
+		<span class="desc currentHumidity">Humidity: {{weather.humidity}}%</span>
 	</div>
 </div>

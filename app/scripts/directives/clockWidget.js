@@ -7,7 +7,7 @@
  * # clockWidget
  */
 angular.module('carpcFrontApp')
-  .directive('clockWidget', ['$rootScope', '$timeout', function ($rootScope, $timeout) {
+  .directive('clockWidget', ['$rootScope', '$timeout', '$locale', function ($rootScope, $timeout, $locale) {
 	
 	  // Dateformat > https://docs.angularjs.org/api/ng/filter/date
 	  

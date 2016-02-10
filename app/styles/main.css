@@ -1,0 +1,134 @@
+@import url('./weather.css');
+
+body {
+	background: black;
+}
+
+#main .clockWidget {
+	color: silver;
+	padding: 0px;
+	margin: 0px;
+}
+
+#main .clockWidget .time-box {
+	margin: 0px;
+	padding: 0px;
+	float: left;
+}
+
+#main .clockWidget .date-box {
+	float: left;
+	margin: 13px 0 0 10px;
+}
+
+#main .clockWidget .day,
+#main .clockWidget .date {
+	display: block;
+}
+
+#main .clockWidget .time {
+	font-weight: bold;
+	font-size: 3em;
+}
+
+#main .clockWidget .day {
+	font-size: 1em;
+}
+
+#main .clockWidget .date {
+	font-size: 0.8em;
+}
+
+/* Nexus 7 landscape */
+@media screen and (min-width: 960px) {
+
+	/*##################################################*/
+	/*	Clock Widget 									*/
+	/*##################################################*/
+	#main .clockWidget .date-box {
+		float: left;
+		margin: 15px 0 0 10px;
+	}
+
+	#main .clockWidget .time {
+		font-weight: bold;
+		font-size: 5em;
+	}
+
+	#main .clockWidget .day {
+	font-size: 2em;
+	}
+	
+	#main .clockWidget .date {
+		font-size: 1.5em;
+	}
+	
+
+}
+
+/* Nexus 7 portrait */
+@media screen and (min-width: 600px) {
+	 
+}
+
+#main-bottom-navbar {
+	padding: 8px 0 0 0;	
+}
+
+
+
+/***************** Weather Widget **********************/
+#main .weatherPanel {
+	height: 200px;
+	margin-top: 15px;
+}
+
+#main .weatherWidget .weatherIcon {
+	float: left;
+	margin: 25px 0px 0px;
+	padding: 0px;
+	height: 65px;
+	width: 120px;
+}
+
+#main .weatherWidget .weatherIcon ul {
+	font-size: 14px;
+	line-height: 3em;
+	margin: 0;
+	padding: 0;
+}
+
+#main .weatherWidget .weatherIcon ul li {
+	margin-bottom: 5px;
+}
+
+#main .weatherWidget .weatherIcon li {
+	list-style: outside none none;
+}
+
+#main .weatherWidget .weatherDescription {
+	width: 50%;
+	float: left;
+}
+
+.weatherWidget .weatherDescription .desc  {
+	width: 100%;
+	display: block;
+}
+
+.desc.cityName {
+    font-size: 3em;
+    font-weight: bold;
+    line-height: 25px;
+}
+
+.desc.currentDescription {
+	font-size: 1.5em;
+    font-weight: bold;
+}
+
+.appButton {
+	width: 100%;
+	height: 100px;
+	margin-bottom: 15px;
+}

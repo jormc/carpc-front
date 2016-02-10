@@ -17,7 +17,8 @@ angular
     'ngResource',
     'ngRoute',
     'ngSanitize',
-    'ngTouch'
+    'ngTouch',
+    'angularScreenfull'
   ])
   .config(function ($routeProvider) {
     $routeProvider

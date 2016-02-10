@@ -1,0 +1,176 @@
+/************** ICONVAULT *********************************/
+@font-face {
+	font-family: "iconvault";
+	font-style: normal;
+	font-weight: normal;
+	src: url("/resources/weather/iconvault_forecastfont.eot?#iefix")
+		format("embedded-opentype"),
+		url("/resources/weather/iconvault_forecastfont.woff") format("woff"),
+		url("/resources/weather/iconvault_forecastfont.ttf")
+		format("truetype"),
+		url("/resources/weather/iconvault_forecastfont.svg#iconvault")
+		format("svg");
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: "iconvault";
+	font-size: 6em;
+	font-style: normal;
+	font-weight: normal;
+	text-decoration: inherit;
+}
+
+@media only screen and (min-width: 479px) and (max-width: 678px) {
+	[class^="icon-"], [class*=" icon-"] {
+		font-family: "iconvault";
+		font-style: normal;
+		font-weight: normal;
+		text-decoration: inherit;
+	}
+}
+
+.basecloud::before {
+	color: rgb(204, 204, 204);
+	content: "";
+	font-family: "iconvault";
+	font-size: 6em;
+	position: absolute;
+}
+
+.windyraincloud::before {
+	color: rgb(204, 204, 204);
+	content: "";
+	font-family: "iconvault";
+	font-size: 6em;
+	position: absolute;
+}
+
+.windysnowcloud::before {
+	color: rgb(204, 204, 204);
+	content: "";
+	font-family: "iconvault";
+	font-size: 6em;
+	position: absolute;
+}
+
+.basethundercloud::before {
+	color: #000;
+	content: "";
+	font-family: "iconvault";
+	font-size: 6em;
+	position: absolute;
+}
+
+.icon-thunder::before {
+	color: rgb(255, 165, 0);
+	content: "";
+	position: absolute;
+}
+
+.icon-sunny::after {
+	color: rgb(255, 165, 0);
+	content: "";
+	position: absolute;
+}
+
+.icon-drizzle::before {
+	color: #82b2e4;
+	content: "";
+	position: absolute;
+}
+
+.icon-hail::before {
+	color: rgb(204, 204, 204);
+	content: "";
+	position: absolute;
+}
+
+.icon-showers::before {
+	color: #82b2e4;
+	content: "";
+	position: absolute;
+}
+
+.icon-rainy::before {
+	color: #4681c3;
+	content: "";
+	position: absolute;
+}
+
+.icon-snowy::before {
+	color: #acd3f3;
+	content: "";
+	position: absolute;
+}
+
+.icon-frosty::before {
+	color: #85d8f7;
+	content: "";
+	position: absolute;
+}
+
+.icon-windy::before {
+	color: rgb(204, 204, 204);
+	content: "";
+	position: absolute;
+}
+
+.icon-windyrain::before {
+	color: #acd3f3;
+	content: "";
+	position: absolute;
+}
+
+.icon-windysnow::before {
+	color: #acd3f3;
+	content: "";
+	position: absolute;
+}
+
+.icon-sleet::before {
+	color: #acd3f3;
+	content: "";
+	position: absolute;
+}
+
+.icon-moon::after {
+	color: rgb(255, 165, 0);
+	content: "";
+	position: absolute;
+}
+
+.icon-night::after {
+	color: rgb(255, 165, 0);
+	content: "";
+	position: absolute;
+}
+
+.icon-sun::after {
+	color: rgb(255, 165, 0);
+	content: "";
+	position: absolute;
+}
+
+.icon-cloud::after {
+	color: rgb(204, 204, 204);
+	content: "";
+	position: absolute;
+}
+
+.icon-sunrise::before {
+	color: rgb(255, 165, 0);
+	content: "";
+	position: absolute;
+}
+
+.icon-sunset::before {
+	color: #f96f23;
+	content: "";
+	position: absolute;
+}
+
+.icon-mist::before {
+	color: rgb(204, 204, 204);
+	content: "";
+	position: absolute;
+}

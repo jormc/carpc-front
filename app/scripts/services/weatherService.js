@@ -8,18 +8,19 @@
  * Service in the carpcFrontApp.
  */
 angular.module('carpcFrontApp')
-  .service('weatherService', ['$http', '$q', function($http, $q) {
+  .service('weatherService', ['$http', '$q', '$locale', function($http, $q, $locale) {
 
 	  function getWeather() {
 		  var deferred = $q.defer();
-		  
+		  var lang = $locale.id.substring(0,2);
 		  var weatherServiceUrl = "http://api.openweathermap.org/data/2.5/weather";
 		  var options = {
 			  params : {
 				  'appid'		: 	'44db6a862fba0b067b1930da0d769e98',
 				  'q'			: 	'Barcelona,es',
 				  'units'		: 	'metric',
-				  'callback'	:	'JSON_CALLBACK'  
+				  'callback'	:	'JSON_CALLBACK',
+				  'lang'		:	lang
 			  }
 		  };
 		  
@@ -46,10 +47,10 @@ angular.module('carpcFrontApp')
 				  weather.coord.lat = data.coord.lat; // City geo location, latitude
 			  }
 			  
-			  if (data.weather) {
-				  weather.id = data.weather.id; // Weather condition id
-				  weather.description = data.weather.description; // Weather condition within the group
-				  weather.icon = data.weather.icon; // Weather icon id
+			  if (data.weather && data.weather[0]) {
+				  weather.id = data.weather[0].id; // Weather condition id
+				  weather.description = data.weather[0].description; // Weather condition within the group
+				  weather.icon = data.weather[0].icon; // Weather icon id
 			  }
 			  
 			  weather.base = data.weather.base;	// Internal parameter
